@@ -11,22 +11,21 @@ sleep 2
 
 wmctrl -r "Haskell Terminal" -t 1
 wmctrl -r "Blink Terminal" -t 2
-sleep 1
+sleep 2
 
 sublime -a --project "~/code/Maxifill/web-animations-next/web-animations-next.sublime-project" &
-sleep 3
+sleep 4
 sublime -n -a --project "~/code/JSTypeInference/JSTypeInference/Code_JSTypeInference.sublime-project" &
-sleep 3
+sleep 4
 wmctrl -r :ACTIVE: -t 1
 sleep 2
 
 # All of this messing around with 2 chrome instances is because they don't open properly on Ubuntu
 google-chrome --window-size=800,800 &
 google-chrome --window-size=800,800 &
-sleep 2
+sleep 3
 wmctrl -c "New Tab - Google Chrome"
-sleep 2
-
+sleep 1
 wmctrl -r "New Tab - Google Chrome" -b add,maximized_horz
 wmctrl -r "New Tab - Google Chrome" -b add,maximized_vert
 
