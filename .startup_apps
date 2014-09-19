@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 12
+sleep 10
 wmctrl -n 3
 wmctrl -s 0
 
@@ -15,10 +15,19 @@ sleep 1
 
 sublime -a --project "~/code/Maxifill/web-animations-next/web-animations-next.sublime-project" &
 sleep 3
-sublime -a -n --project "~/code/JSTypeInference/JSTypeInference/Code_JSTypeInference.sublime-project" &
+sublime -n -a --project "~/code/JSTypeInference/JSTypeInference/Code_JSTypeInference.sublime-project" &
 sleep 3
 wmctrl -r :ACTIVE: -t 1
 sleep 2
 
-google-chrome &
+# All of this messing around with 2 chrome instances is because they don't open properly on Ubuntu
+google-chrome --window-size=800,800 &
+google-chrome --window-size=800,800 &
+sleep 2
+wmctrl -c "New Tab - Google Chrome"
+sleep 2
 
+wmctrl -r "New Tab - Google Chrome" -b add,maximized_horz
+wmctrl -r "New Tab - Google Chrome" -b add,maximized_vert
+
+wmctrl -a "Main Terminal"
