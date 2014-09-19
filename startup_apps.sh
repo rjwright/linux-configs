@@ -1,10 +1,9 @@
 #!/bin/bash
 
-sleep 10
-
+sleep 5
 wmctrl -n 3
-
 wmctrl -s 0
+
 gnome-terminal --tab-with-profile=Main --title="Main Terminal" &
 gnome-terminal --tab-with-profile=Haskell --title="Haskell Terminal" &
 gnome-terminal --tab-with-profile=Blink --title="Blink Terminal" &
