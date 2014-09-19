@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep 5
+sleep 8
 wmctrl -n 3
 wmctrl -s 0
 
