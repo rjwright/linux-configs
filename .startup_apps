@@ -15,7 +15,7 @@ sleep 2
 
 sublime -a --project "~/code/Maxifill/web-animations-next/web-animations-next.sublime-project" &
 sleep 4
-sublime -n -a --project "~/code/JSTypeInference/JSTypeInference/Code_JSTypeInference.sublime-project" &
+sublime -a --project "~/code/JSTypeInference/JSTypeInference/Code_JSTypeInference.sublime-project" &
 sleep 4
 wmctrl -r :ACTIVE: -t 1
 sleep 2
