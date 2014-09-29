@@ -112,6 +112,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# export PROMPT_COMMAND='history -a'
+export PROMPT_COMMAND='history -a'
 
 export CHROME_DEVEL_SANDBOX=/usr/local/sbin/chrome-devel-sandbox
