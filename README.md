@@ -7,7 +7,7 @@ Linux config files and similar
 .startup_apps:
 Opens 3 terminals and sends them to different workspaces.
 Opens my 2 main projects in sublime and sends them to different workspaces.
-Opens chrome and works around an annoying startup bug on Ubunut.
+Opens chrome.
 
 This works in complement with having a different profile for each terminal and a different history file for each
 terminal profile (set up locally, not in this script). To set this up I set a PROFILE variable in the profile's
